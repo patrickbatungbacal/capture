@@ -1,7 +1,6 @@
 import React from "react";
 
 //import styled-components
-import styled from "styled-components";
 import { About, Description, Image, Hide } from "../styles";
 
 //import resources
