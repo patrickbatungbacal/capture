@@ -7,14 +7,27 @@ import OurWork from "./pages/OurWork";
 //import global style
 import GlobalStyle from "./components/global style/GlobalStyle";
 
+//import router packages
+import { Switch, Route } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AboutUs />
-      <OurWork />
-      <ContactUs />
+      <Switch>
+        <Route path="/" exact>
+          <AboutUs />
+        </Route>
+
+        <Route path="/work">
+          <OurWork />
+        </Route>
+
+        <Route path="/contact">
+          <ContactUs />
+        </Route>
+      </Switch>
     </div>
   );
 }
