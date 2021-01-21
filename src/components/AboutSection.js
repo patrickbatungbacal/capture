@@ -2,6 +2,7 @@ import React from "react";
 
 //import styled-components
 import { About, Description, Image, Hide } from "../styles";
+import Wave from "./Wave";
 
 //import resources
 import home1 from "../img/home1.png";
@@ -38,6 +39,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="photographer" />
       </Image>
+      <Wave />
     </About>
   );
 };
