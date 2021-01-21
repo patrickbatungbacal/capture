@@ -8,6 +8,8 @@ import { useHistory } from "react-router-dom";
 
 //import stuff
 import { MovieState } from "../movieState";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -22,10 +24,15 @@ const MovieDetail = () => {
   return (
     <>
       {movie && (
-        <Details>
+        <Details
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <HeadLine>
             <h2>{movie.title}</h2>
-            <img src={movie.mainImg} alt="main image" />
+            <img src={movie.mainImg} alt="main" />
           </HeadLine>
           <Awards>
             {movie.awards.map((award) => (
@@ -45,7 +52,7 @@ const MovieDetail = () => {
   );
 };
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: white;
 `;
 
