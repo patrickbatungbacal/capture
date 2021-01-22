@@ -8,6 +8,9 @@ import goodtimes from "../img/goodtimes-small.png";
 //styled components
 import styled from "styled-components";
 
+//import components
+import ScrollTop from "../components/ScrollTop";
+
 //import link from react-r-dom
 import { Link } from "react-router-dom";
 
@@ -72,6 +75,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
