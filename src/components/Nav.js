@@ -7,7 +7,6 @@ import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 
 //import motion
-import { lineAnim } from "../animation";
 import { motion } from "framer-motion";
 
 const Nav = () => {

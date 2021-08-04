@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 
-//import styled components
-import styled from "styled-components";
-
 //import animations
 import { motion } from "framer-motion";
 

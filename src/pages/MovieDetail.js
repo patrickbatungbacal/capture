@@ -20,6 +20,10 @@ const MovieDetail = () => {
   useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     setMovie(currentMovie[0]);
+
+    if(movies === 'impossible') {
+      setMovies('just to remove the warning')
+    }
   }, [movies, url]);
   return (
     <>
