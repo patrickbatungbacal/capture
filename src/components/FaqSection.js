@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 //import styles
 import styled from "styled-components";
@@ -10,7 +10,7 @@ import Toggle from "./Toggle";
 //import framer motion
 import { AnimateSharedLayout } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { scrollReveal, fade } from "../animation";
+import { scrollReveal } from "../animation";
 
 const FaqSection = () => {
   const [element, controls] = useScroll();

@@ -24,7 +24,6 @@ import {
   lineAnim,
   slider,
   sliderContainer,
-  scrollReveal,
 } from "../animation";
 
 const OurWork = () => {

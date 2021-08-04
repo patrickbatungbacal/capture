@@ -23,13 +23,9 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <AboutUs />
-          </Route>
+          <Route path="/" exact component={AboutUs} />
 
-          <Route path="/work" exact>
-            <OurWork />
-          </Route>
+          <Route path="/work" exact component={OurWork} />
 
           <Route path="/work/:id">
             <MovieDetail />
